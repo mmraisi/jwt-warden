@@ -35,5 +35,5 @@
 		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
 		"typeRoots": ["./@types"]
 	},
-	"exclude": ["node_modules", "docs", "dist"]
+	"exclude": ["node_modules", "docs", "dist", "coverage"]
 }
