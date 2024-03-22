@@ -1,6 +1,5 @@
 import { verify } from '../src/controllers/verify';
 import { describe, expect, it } from 'vitest';
-import { JwtError } from '../src/utils/jwtError';
 import { sign } from '../src/controllers/sign';
 
 describe('verify function', () => {
