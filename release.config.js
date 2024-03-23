@@ -18,6 +18,7 @@ module.exports = {
 						label: "Type Definitions",
 					},
 				],
+				releaseBranch: "main",
 			},
 		],
 	],
