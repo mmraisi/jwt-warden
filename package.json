@@ -2,12 +2,39 @@
 	"name": "jwt-warden",
 	"version": "1.0.0",
 	"description": "A comprehensive Node.js package for JSON Web Token (JWT) authentication and authorization.",
-	"main": "index.js",
+	"main": "dist/src/index.js",
+	"author": "Mahmoud Mraisi",
+	"homepage": "https://github.com/mmraisi/jwt-warden",
+	"types": "dist/src/index.d.ts",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mmraisi/jwt-warden"
+	},
+	"bugs": {
+		"url": "https://github.com/mmraisi/jwt-warden/issues"
+	},
 	"scripts": {
+		"build": "tsc",
 		"test": "vitest . --coverage"
 	},
-	"author": "Mahmoud Mraisi",
-	"license": "MIT",
+	"files": [
+		"utils",
+		"decode.js",
+		"sign.js",
+		"verify.js"
+	],
+	"keywords": [
+		"jwt",
+		"warden",
+		"authentication",
+		"authorization",
+		"auth"
+	],
+	"engines": {
+		"npm": ">=6",
+		"node": ">=12"
+	},
 	"devDependencies": {
 		"@types/jsonwebtoken": "^9.0.6",
 		"@types/node": "^20.11.30",
