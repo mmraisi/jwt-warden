@@ -1,6 +1,6 @@
 {
 	"name": "jwt-warden",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "A comprehensive Node.js package for JSON Web Token (JWT) authentication and authorization.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
