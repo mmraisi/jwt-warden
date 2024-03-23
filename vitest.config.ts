@@ -1,11 +1,12 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-	root: '.',
+	root: ".",
 	test: {
 		coverage: {
-			provider: 'v8',
+			provider: "v8",
+			exclude: ["src/index.ts"],
 		},
-		setupFiles: ['dotenv/config'],
+		setupFiles: ["dotenv/config"],
 	},
 });
