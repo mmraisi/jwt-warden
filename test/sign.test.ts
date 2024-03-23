@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 describe('sign function', () => {
 	it('should sign a JWT with valid payload and secret key', () => {
 		const payload = { userId: '123456789', role: 'admin' };
-		const secretKey = process.env.JWT_TOKEN ?? '';
+		const secretKey = process.env.JWT_SECRET ?? '';
 		const token = sign(payload, secretKey);
 		expect(typeof token).toBe('string');
 		// You can add more assertions to verify the token's structure, etc.

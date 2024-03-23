@@ -4,7 +4,7 @@ import { sign } from '../src/controllers/sign';
 
 describe('verify function', () => {
 	const payload = { userId: '123456789', role: 'admin' };
-	const secretKey = process.env.JWT_TOKEN ?? '';
+	const secretKey = process.env.JWT_SECRET ?? '';
 	const token = sign(payload, secretKey);
 	it('should verify a valid JWT token', () => {
 		const verifiedPayload = verify(token, secretKey);
