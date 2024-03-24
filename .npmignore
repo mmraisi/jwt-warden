@@ -13,6 +13,7 @@ node_modules
 coverage
 
 
+
 # additional ignore
 .editorconfig
 .github
@@ -24,3 +25,4 @@ test
 .eslintrc
 .npmrc
 vitest.config.ts
+node_modules_bak

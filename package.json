@@ -2,9 +2,8 @@
 	"name": "jwt-warden",
 	"version": "1.0.2",
 	"description": "A comprehensive Node.js package for JSON Web Token (JWT) authentication and authorization.",
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
+	"main": "dist/src/index.js",
+	"types": "dist/src/index.d.ts",
 	"author": "Mahmoud Mraisi",
 	"homepage": "https://github.com/mmraisi/jwt-warden",
 	"license": "MIT",
@@ -16,8 +15,9 @@
 		"url": "https://github.com/mmraisi/jwt-warden/issues"
 	},
 	"scripts": {
-		"build": "tsup",
-		"test": "vitest . --coverage"
+		"lint": "eslint .",
+		"build": "tsc --build",
+		"test": "npm run lint && vitest . --coverage"
 	},
 	"files": [
 		"dist"
@@ -35,7 +35,6 @@
 		"typescript": ">=4"
 	},
 	"devDependencies": {
-		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^10.0.2",
 		"@semantic-release/npm": "^12.0.0",
 		"@semantic-release/release-notes-generator": "^12.1.0",
@@ -44,10 +43,10 @@
 		"@typescript-eslint/eslint-plugin": "^7.3.1",
 		"@typescript-eslint/parser": "^7.3.1",
 		"@vitest/coverage-v8": "^1.4.0",
+		"cost-of-modules": "^1.0.1",
 		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",
 		"semantic-release": "^23.0.5",
-		"tsup": "^8.0.2",
 		"typescript": "^5.4.3",
 		"vitest": "^1.4.0"
 	},
