@@ -17,7 +17,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"build": "rm -rf dist && tsc --build",
-		"test": "npm run lint && vitest . --coverage"
+		"test": "npm run lint && vitest . --coverage  --watch=false"
 	},
 	"files": [
 		"dist"

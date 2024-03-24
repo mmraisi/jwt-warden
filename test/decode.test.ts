@@ -5,7 +5,7 @@ import { sign } from "../src/controllers/sign";
 
 describe("decode function", () => {
 	const payload = { userId: "123456789", role: "admin" };
-	const secretKey = process.env.JWT_SECRET ?? "";
+	const secretKey = process.env.JWT_SECRET ?? "some-secret";
 	const token = sign(payload, secretKey);
 
 	it("should decode a valid JWT token", () => {

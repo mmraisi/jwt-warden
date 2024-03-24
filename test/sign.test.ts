@@ -10,7 +10,7 @@ describe("sign function", () => {
 	});
 
 	it("should throw an error if payload is missing", () => {
-		const secretKey = "secret";
+		const secretKey = "some-secret";
 		// @ts-expect-error: Suppress next line
 		expect(() => sign(null, secretKey)).toThrow("Payload is required");
 	});
