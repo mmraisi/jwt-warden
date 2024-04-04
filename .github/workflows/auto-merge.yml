@@ -1,0 +1,23 @@
+name: auto-merge
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge-dependabot:
+    name: dependabot
+    runs-on: ubuntu-20.04
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4.1.2
+
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2.6.6
+        if: github.actor == 'dependabot[bot]'
+        with:
+          target: minor
+          github-token: ${{ secrets.GH_TOKEN_WRITE }}
