@@ -45,7 +45,7 @@
 		"cost-of-modules": "^1.0.1",
 		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",
-		"semantic-release": "^23.0.5",
+		"semantic-release": "^24.0.0",
 		"typescript": "^5.4.3",
 		"vitest": "^1.4.0"
 	},
